@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "URL Check",
+  "description": "This Chrome extension checks metrics on a page via GTmetrix",
+  "version": "1.0",
+
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["jquery-3.2.1.min.js", "content.js"]
+  }],
+
+  "browser_action": {
+  	"default_icon": "URL Check.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
