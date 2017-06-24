@@ -18,3 +18,5 @@ chrome.runtime.onMessage.addListener(
 	}
 );
 
+// TEST CODE
+// chrome.tabs.create({"url": "http://google.com"});
