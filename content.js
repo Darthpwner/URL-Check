@@ -1,10 +1,10 @@
 //content.js
 
-alert("Hello from Matt's Chrome extension!")
+// alert("Hello from Matt's Chrome extension!")
 
 var firstHref = $("a[href^='http']").eq(0).attr("href");
 
-alert(firstHref);
+// alert(firstHref);
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
